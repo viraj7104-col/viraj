@@ -31,7 +31,7 @@ io.on('connection', (socket) => {
     0
   });
   socket.on('chat message', (msg) => {
-    socket.broadcast.emit('chat message', msg);         //sending message to all except the sender
+    socket.broadcast.emit('chat message', msg);         
   });
 });
 
